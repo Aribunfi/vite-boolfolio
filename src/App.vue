@@ -7,6 +7,7 @@ export default {
   data() {
     return {
       title: "Ciao mondo",
+      projects: [],
     };
   },
     components: { AppHeader },
@@ -16,7 +17,7 @@ export default {
         axios
         .get('http://127.0.0.1:8000/api/projects')
         .then((response) => {
-            console.log(response);
+            console.log(response.data);
         })
 
       }
