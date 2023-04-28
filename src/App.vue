@@ -17,7 +17,7 @@ export default {
         axios
         .get('http://127.0.0.1:8000/api/projects')
         .then((response) => {
-            console.log(response.data);
+            this.projects = response.data;
         })
 
       }
@@ -36,6 +36,14 @@ created() {
 <template>
   <AppHeader />
   <h1>{{ title }}</h1>
+
+  <ul>
+    <li v-for="project in projects">{{ project.title }}</li>
+  </ul>
+
+
+
+
 </template>
 
 <style lang="scss" scoped></style>
