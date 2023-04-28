@@ -1,11 +1,7 @@
 <script>
 
 export default {
-    data() {
-        return {
-            title: "Hello World"
-        }
-    }
+    name: 'AppHeader',
 };
 </script>
 
