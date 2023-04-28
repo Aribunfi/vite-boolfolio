@@ -1,20 +1,30 @@
 <script>
+import axios from 'axios';
 
 import AppHeader from './components/AppHeader.vue';
 
 export default {
   data() {
     return {
-      title: "Ciao mondo"
+      title: "Ciao mondo",
     };
   },
-  components: { AppHeader },
-}
+    components: { AppHeader },
+
+    methods: {
+      fetchProjects() {
+        axios.get('http://127.0.0.1:8000/api/projects')
+
+      }
+    },
+  };
+  
 
 
 </script>
 
 <template>
+  <AppHeader />
   <h1>{{ title }}</h1>
 </template>
 
