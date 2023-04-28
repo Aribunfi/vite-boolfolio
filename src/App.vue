@@ -3,7 +3,7 @@
 export default {
   data() {
     return {
-      title: "Hello world"
+      title: "Ciao mondo"
     }
   }
 }
