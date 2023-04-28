@@ -6,8 +6,9 @@ export default {
   data() {
     return {
       title: "Ciao mondo"
-    }
-  }
+    };
+  },
+  components: { AppHeader },
 }
 
 
