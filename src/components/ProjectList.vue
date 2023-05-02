@@ -11,7 +11,10 @@ export default {
 </script>
 
 <template>
-    <h1>{{ title }}</h1>
+      <ul>
+    <li v-for="project in projects">{{ project.title }}</li>
+  </ul>
+
 </template>
 
 <style lang="scss" scoped></style>
