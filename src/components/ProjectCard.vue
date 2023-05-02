@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    {{ project.title }}
+    <li>{{ project.title }}</li>
 </template>
 
 <style lang="scss" scoped></style>
