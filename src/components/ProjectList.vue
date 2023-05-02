@@ -15,7 +15,7 @@ export default {
 
 <template>
       <ul>
-    <li v-for="project in projects">{{ project.title }}</li>
+    <ProjectCard v-for="project in projects" />
   </ul>
 
 </template>
