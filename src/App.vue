@@ -8,7 +8,7 @@ import ProjectList from './components/ProjectList.vue';
 export default {
   data() {
     return {
-      title: "Ciao mondo",
+      title: "Boolfolio",
       projects: [],
     };
   },
@@ -36,9 +36,9 @@ created() {
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader :title="title" />
   <h1>{{ title }}</h1>
-  <ProjectList :projects="projects" />
+  <ProjectList :projects="projects" title="Project List" class="my-5"/>
 
 </template>
 
