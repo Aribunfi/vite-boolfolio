@@ -1,10 +1,8 @@
 <script>
 
 export default {
-    data() {
-        return {
-            title: "Hello World"
-        }
+   props: {
+        projects: Array,
     }
 };
 
