@@ -15,7 +15,7 @@ export default {
 
 <template>
       <ul>
-    <ProjectCard v-for="project in projects" />
+    <ProjectCard v-for="project in projects" :key="project.id" :project="project"/>
   </ul>
 
 </template>
