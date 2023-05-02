@@ -2,6 +2,8 @@
 import axios from 'axios';
 
 import AppHeader from './components/AppHeader.vue';
+import ProjectList from './components/ProjectList.vue';
+
 
 export default {
   data() {
@@ -10,7 +12,7 @@ export default {
       projects: [],
     };
   },
-    components: { AppHeader },
+    components: { AppHeader, ProjectList },
 
     methods: {
       fetchProjects() {
