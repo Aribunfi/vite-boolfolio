@@ -23,7 +23,7 @@ export default {
         <h2 v-else class="text-muted">Non ci sono progetti</h2>
     
         <nav aria-label="Page navigation example">
-  <ul class="pagination">
+  <ul v-if="projects.length" class="pagination">
     <li class="page-item"><a class="page-link" href="#">Previous</a></li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>

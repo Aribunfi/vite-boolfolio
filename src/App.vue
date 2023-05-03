@@ -9,7 +9,10 @@ export default {
   data() {
     return {
       title: "Boolfolio",
-      projects: [],
+      projects: {
+        data: [],
+        pagination: [],
+      },
     };
   },
     components: { AppHeader, ProjectList },
