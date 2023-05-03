@@ -26,7 +26,8 @@ export default {
 </script>
 
 <template>
-    <ProjectCard :project="project" />
+    <h1 class="my-4">Dettaglio Progetto {{ project?.title }}</h1>
+    <ProjectCard v-if="project" :project="project" />
 </template>
 
 <style lang="scss" scoped></style>
