@@ -11,7 +11,7 @@ export default {
       title: "Boolfolio",
       projects: {
         data: [],
-        pagination: [],
+        pages: [],
       },
     };
   },
@@ -20,9 +20,10 @@ export default {
     methods: {
       fetchProjects() {
         axios
-        .get('http://127.0.0.1:8000/api/projects')
+        .get('http://localhost:5175/api/projects')
         .then((response) => {
             this.projects.data = response.data.data;
+            this.projects.pages = response.data.links;
         })
 
       }
@@ -41,7 +42,7 @@ created() {
 <template>
   <AppHeader :title="title" />
   <h1>{{ title }}</h1>
-  <ProjectList :projects="projects" title="Most recent" class="my-5"/>
+  <ProjectList :projects="projects.data" :pagination="projects.pagination" title="Most recent" class="my-5"/>
 
 </template>
 
