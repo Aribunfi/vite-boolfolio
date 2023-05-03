@@ -4,6 +4,7 @@ export default {
     name: "ProjectCard",
    props: {
     project: Object,
+    isDetail: Boolean,
    }
 };
 
@@ -16,14 +17,18 @@ export default {
         <h2>{{ project.title }}</h2>
         </div>
         <div class="card-body">
-        {{ project.description }}
+        {{ isDetail ? project.description : abstract }}
         </div>
         <div class="card-footer d-flex justify-content-between">
         {{ project.year }}
-        <router-link class="btn btn-primary btn-sm" :to="{name: 'project-detail',
-    params: {
-        'id': project.id,
-    }
+        <router-link
+        v-if="!isDetail"
+        class="btn btn-primary btn-sm" :to="{
+        name: 'project-detail',
+        params: {
+            slug: project.slug,
+        },
+    
     }"> Guarda </router-link>
 
         </div>

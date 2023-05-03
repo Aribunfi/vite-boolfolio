@@ -16,7 +16,7 @@ export default {
     created() {
         // console.log(this.$route.params.id);
         axios
-        .get(`http://127.0.0.1:8000/api/projects/${this.$route.params.id}`)
+        .get(`http://127.0.0.1:8000/api/projects/${this.$route.params.slug}`)
         .then((response) => {
             this.project = response.data;
         });
@@ -27,7 +27,7 @@ export default {
 
 <template>
     <h1 class="my-4">Dettaglio Progetto {{ project?.title }}</h1>
-    <ProjectCard v-if="project" :project="project" />
+    <ProjectCard v-if="project" :project="project" :isDetail="true" />
 </template>
 
 <style lang="scss" scoped></style>
