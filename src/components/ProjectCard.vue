@@ -18,9 +18,12 @@ export default {
         <div class="card-body">
         {{ project.description }}
         </div>
-        <div class="card-footer">
+        <div class="card-footer d-flex justify-content-between">
         {{ project.year }}
+        <router-link class="btn btn-primary btn-sm" to="/"> Guarda </router-link>
+
         </div>
+
     </div>
 </template>
 
