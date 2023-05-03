@@ -22,7 +22,7 @@ export default {
         axios
         .get('http://127.0.0.1:8000/api/projects')
         .then((response) => {
-            this.projects = response.data.data;
+            this.projects.data = response.data.data;
         })
 
       }
