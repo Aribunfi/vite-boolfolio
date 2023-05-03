@@ -1,10 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import HomePage from './pages/HomePage.vue';
-import ContactPage from './pages/ContactPage.vue';
+import HomePage from '../pages/HomePage.vue';
+import ContactPage from '../pages/ContactPage.vue';
 
 const router = createRouter({
     history: createWebHistory(),
+    LinkActiveClass: 'active', 
+    LinkExactActiveClass: '',
+
     routes: [
         {
             path: '/',
@@ -19,3 +22,5 @@ const router = createRouter({
         },
     ]
 });
+
+export { router };
