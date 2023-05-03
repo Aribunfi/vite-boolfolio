@@ -1,8 +1,7 @@
 <script>
 
 import AppHeader from './components/AppHeader.vue';
-import HomePage from './pages/HomePage.vue';
-import ContactPage from './pages/ContactPage.vue';
+
 
 export default {
   data() {
@@ -11,7 +10,7 @@ export default {
    
     };
   },
-    components: { AppHeader, HomePage, ContactPage },
+    components: { AppHeader },
 
     
 
