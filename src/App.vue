@@ -2,6 +2,7 @@
 
 import AppHeader from './components/AppHeader.vue';
 import HomePage from './pages/HomePage.vue';
+import ContactPage from './pages/ContactPage.vue';
 
 export default {
   data() {
@@ -10,7 +11,7 @@ export default {
    
     };
   },
-    components: { AppHeader, HomePage },
+    components: { AppHeader, HomePage, ContactPage },
 
     
 
@@ -25,6 +26,7 @@ export default {
 <template>
   <AppHeader :title="title" />
   <HomePage />
+  <ContactPage />
 
 </template>
 

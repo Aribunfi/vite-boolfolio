@@ -1,6 +1,6 @@
 <script>
 import axios from 'axios';
-import ProjectList from './components/ProjectList.vue';
+import ProjectList from '../components/ProjectList.vue';
 
 export default {
     data() {
