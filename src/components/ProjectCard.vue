@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div class="card">
-        <div class="card-header">
+        <div class="card-header d-flex justify-content-between">
         <h2>{{ project.title }}</h2>
         </div>
         <div class="card-body">
