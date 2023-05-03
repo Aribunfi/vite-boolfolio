@@ -38,7 +38,7 @@ created() {
 <template>
   <AppHeader :title="title" />
   <h1>{{ title }}</h1>
-  <ProjectList :projects="projects" title="Project List" class="my-5"/>
+  <ProjectList :projects="projects" title="Most recent" class="my-5"/>
 
 </template>
 
