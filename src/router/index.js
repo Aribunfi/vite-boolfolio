@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import HomePage from '../pages/HomePage.vue';
 import ContactPage from '../pages/ContactPage.vue';
-import PostDetailPage from '../pages/PostDetailPage.vue';
+import PostDetailPage from '../pages/ProjectDetailPage.vue';
 
 
 const router = createRouter({
