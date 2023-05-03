@@ -20,7 +20,11 @@ export default {
         </div>
         <div class="card-footer d-flex justify-content-between">
         {{ project.year }}
-        <router-link class="btn btn-primary btn-sm" to="/"> Guarda </router-link>
+        <router-link class="btn btn-primary btn-sm" :to="{name: 'project-detail',
+    params: {
+        'id': project.id,
+    }
+    }"> Guarda </router-link>
 
         </div>
 
