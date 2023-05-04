@@ -13,16 +13,20 @@ export default {
 
 <template>
     <div class="card">
-        <div class="card-header d-flex justify-content-between">
+        <div class="card-header d-flex justify-content-between align-items-start">
         <h2>{{ project.title }}</h2>
         <span 
         v-if="project.category"
         class="badge"
-        :style="{backgroundColor: project.category.color}">
+        :style="{backgroundColor: project.category.color }">
         {{ project.category.label }}
         </span>
         </div>
         <div class="card-body">
+            <div v-if="project.tags.length">
+                Tags 
+                <hr />
+            </div>
         {{ isDetail ? project.description : abstract }}
         </div>
         <div class="card-footer d-flex justify-content-between">
