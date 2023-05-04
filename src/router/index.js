@@ -32,7 +32,7 @@ const router = createRouter({
 
 
         {
-            path: '/404',
+            path: '/:pathMatch(.*)*',
             name: 'not-found',
             component: NotFoundPage,
         },
