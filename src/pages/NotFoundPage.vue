@@ -8,10 +8,14 @@ export default {
 
 <template>
 
-<div class="d-flex align-items-center justify-content-center h-100">
+<div class="d-flex align-items-center justify-content-center full-height">
     <strong>404 | Not found</strong> 
 </div>
  
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.full-height {
+    min-height: calc(100vh - 56px);
+}
+</style>
