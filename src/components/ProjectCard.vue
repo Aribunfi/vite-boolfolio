@@ -24,7 +24,13 @@ export default {
         </div>
         <div class="card-body">
             <div v-if="project.tags.length">
-                Tags 
+                <span
+                v-for="tag in project.tags"
+                :key="tag.id"
+                class="badge rounded-pill me-2"
+                :style="{backgroundColor: tag.color }">
+                    {{ tag.label }}
+            </span> 
                 <hr />
             </div>
         {{ isDetail ? project.description : abstract }}
