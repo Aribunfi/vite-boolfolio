@@ -15,7 +15,12 @@ export default {
     <div class="card">
         <div class="card-header d-flex justify-content-between">
         <h2>{{ project.title }}</h2>
-        <span class="badge">{{ project.category?.label }}</span>
+        <span 
+        v-if="project.category"
+        class="badge"
+        :style="{backgroundColor: project.category.color}">
+        {{ project.category.label }}
+        </span>
         </div>
         <div class="card-body">
         {{ isDetail ? project.description : abstract }}
