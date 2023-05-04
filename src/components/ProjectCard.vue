@@ -15,6 +15,7 @@ export default {
     <div class="card">
         <div class="card-header d-flex justify-content-between">
         <h2>{{ project.title }}</h2>
+        <span class="badge">{{ project.category }}</span>
         </div>
         <div class="card-body">
         {{ isDetail ? project.description : abstract }}
